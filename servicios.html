@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin Seok | Servicios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Montserrat', 'sans-serif'], display: ['Bebas Neue', 'cursive'] },
+                    colors: { brand: { black: '#0a0a0a', blue: '#2952E3', white: '#ffffff', gray: '#F3F4F6' } }
+                }
+            }
+        }
+    </script>
+    <style> .btn-pill { border-radius: 999px; padding: 12px 30px; font-weight: 700; text-transform: uppercase; } .btn-primary { background: #2952E3; color: white; } </style>
+</head>
+<body class="antialiased font-sans flex flex-col min-h-screen">
+
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="JIN.jpg" class="h-12 w-12 rounded-full object-cover border-2 border-transparent group-hover:border-brand-blue transition">
+                    <span class="font-display text-3xl mt-1 text-brand-black group-hover:text-brand-blue transition">JIN SEOK</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-brand-blue transition">Inicio</a>
+                    <a href="perfil.html" class="hover:text-brand-blue transition">Sobre Mí</a>
+                    <a href="servicios.html" class="text-brand-blue">Servicios</a>
+                    <a href="precios.html" class="hover:text-brand-blue transition">Precios</a>
+                    <a href="portafolio.html" class="hover:text-brand-blue transition">Portafolio</a>
+                    <a href="contacto.html" class="btn-pill btn-primary text-white text-[10px]">Contacto</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-xl p-4 text-center space-y-4">
+            <a href="index.html" class="block font-bold">INICIO</a>
+            <a href="perfil.html" class="block font-bold">SOBRE MÍ</a>
+            <a href="servicios.html" class="block font-bold text-brand-blue">SERVICIOS</a>
+            <a href="precios.html" class="block font-bold">PRECIOS</a>
+            <a href="portafolio.html" class="block font-bold">PORTAFOLIO</a>
+            <a href="contacto.html" class="block btn-pill btn-primary w-full text-white">CONTACTO</a>
+        </div>
+    </nav>
+
+    <header class="bg-brand-black text-white pt-40 pb-20 text-center">
+        <h1 class="text-6xl font-display" data-aos="fade-up">SERVICIOS</h1>
+        <p class="text-gray-400 mt-4 uppercase tracking-widest text-sm" data-aos="fade-up" data-aos-delay="100">Soluciones Digitales & Artísticas</p>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex items-center gap-4 mb-8">
+            <div class="h-1 w-10 bg-brand-blue"></div>
+            <h2 class="text-3xl font-display">GAMING & STREAMING</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-8 border border-gray-200 rounded-2xl hover:shadow-xl transition group">
+                <i class="fas fa-gamepad text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Twitch Overlays</h3>
+                <p class="text-sm text-gray-500">Diseño completo de tu canal: Marcos de cámara, escenas (Start, BRB, End) y alertas.</p>
+            </div>
+            <div class="p-8 border border-gray-200 rounded-2xl hover:shadow-xl transition group">
+                <i class="fas fa-user-ninja text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Character Design</h3>
+                <p class="text-sm text-gray-500">Creación de tu avatar o mascota para el canal. Estilo anime, cartoon o vector.</p>
+            </div>
+            <div class="p-8 border border-gray-200 rounded-2xl hover:shadow-xl transition group">
+                <i class="fas fa-smile text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Emotes & Badges</h3>
+                <p class="text-sm text-gray-500">Pequeños gráficos expresivos para tu chat de Twitch/Discord.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
+        <div class="flex items-center gap-4 mb-8">
+            <div class="h-1 w-10 bg-brand-blue"></div>
+            <h2 class="text-3xl font-display">DIGITAL & WEB</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition group">
+                <i class="fas fa-laptop-code text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Web Design</h3>
+                <p class="text-sm text-gray-500">Páginas modernas y responsivas (HTML/CSS/Tailwind) como esta.</p>
+            </div>
+            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition group">
+                <i class="fas fa-hashtag text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Social Media</h3>
+                <p class="text-sm text-gray-500">Posts, historias y banners para Instagram, Twitter y YouTube.</p>
+            </div>
+            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition group">
+                <i class="fas fa-layer-group text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Branding</h3>
+                <p class="text-sm text-gray-500">Logotipos, paletas de colores y tipografías para tu marca.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex items-center gap-4 mb-8">
+            <div class="h-1 w-10 bg-brand-blue"></div>
+            <h2 class="text-3xl font-display">ARTE & MERCH</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-8 border border-gray-200 rounded-2xl hover:shadow-xl transition group">
+                <i class="fas fa-tshirt text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">T-Shirt Design</h3>
+                <p class="text-sm text-gray-500">Diseños únicos para estampados de ropa y mercancía.</p>
+            </div>
+            <div class="p-8 border border-gray-200 rounded-2xl hover:shadow-xl transition group">
+                <i class="fas fa-calendar-alt text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Calendarios</h3>
+                <p class="text-sm text-gray-500">Diseño editorial para calendarios personalizados o corporativos.</p>
+            </div>
+            <div class="p-8 border border-gray-200 rounded-2xl hover:shadow-xl transition group">
+                <i class="fas fa-pen-nib text-4xl text-brand-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Drawing / Dibujo</h3>
+                <p class="text-sm text-gray-500">Ilustraciones digitales a medida para cualquier propósito.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-black text-white py-12 border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h3 class="font-display text-2xl">JIN SEOK</h3>
+                <p class="text-gray-500 text-xs font-bold tracking-widest mt-1">HECHO EN GUATEMALA &copy; 2024</p>
+            </div>
+            <div class="flex gap-6 text-2xl text-gray-400">
+                <a href="https://www.behance.net/RicardoCristobal" target="_blank" class="hover:text-brand-blue transition"><i class="fab fa-behance"></i></a>
+                <a href="https://instagram.com/joon_yong19" target="_blank" class="hover:text-[#E1306C] transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true, offset: 50 }); const btn = document.getElementById('mobile-menu-btn'); const menu = document.getElementById('mobile-menu'); btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });</script>
+</body>
+</html>

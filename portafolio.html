@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>Jin Seok | Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        display: ['Bebas Neue', 'cursive']
+                    },
+                    colors: {
+                        brand: {
+                            black: '#0a0a0a',
+                            blue: '#2952E3',
+                            white: '#ffffff'
+                        }
+                    },
+                    boxShadow: {
+                        glow: '0 0 60px rgba(41, 82, 227, 0.4)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .btn-pill {
+            border-radius: 999px;
+            padding: 12px 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .btn-primary {
+            background: #2952E3;
+            color: white;
+        }
+        img {
+            image-rendering: -webkit-optimize-contrast;
+        }
+    </style>
+</head>
+
+<body class="antialiased font-sans flex flex-col min-h-screen bg-gray-50">
+
+<!-- NAV -->
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-24">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="JIN.jpg" class="h-12 w-12 rounded-full object-cover border-2 border-transparent group-hover:border-brand-blue">
+                <span class="font-display text-3xl text-brand-black group-hover:text-brand-blue">JIN SEOK</span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider">
+                <a href="index.html">Inicio</a>
+                <a href="perfil.html">Sobre Mí</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="precios.html">Precios</a>
+                <a href="portafolio.html" class="text-brand-blue">Portafolio</a>
+                <a href="contacto.html" class="btn-pill btn-primary text-[10px]">Contacto</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden bg-white border-t p-4 text-center space-y-4 md:hidden">
+        <a href="index.html" class="block font-bold">INICIO</a>
+        <a href="perfil.html" class="block font-bold">SOBRE MÍ</a>
+        <a href="servicios.html" class="block font-bold">SERVICIOS</a>
+        <a href="precios.html" class="block font-bold">PRECIOS</a>
+        <a href="portafolio.html" class="block font-bold text-brand-blue">PORTAFOLIO</a>
+        <a href="contacto.html" class="block btn-pill btn-primary text-white">CONTACTO</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="pt-40 pb-24 text-center bg-brand-black text-white">
+    <h1 class="text-6xl md:text-7xl font-display mb-4">MI TRABAJO</h1>
+    <div class="w-24 h-1 bg-brand-blue mx-auto mb-6 rounded-full"></div>
+    <p class="text-gray-400 font-bold tracking-widest text-sm uppercase max-w-xl mx-auto">
+        Brand Identity • Streaming • Creatiguate
+    </p>
+</div>
+
+<!-- PROYECTOS (YA NO SE VEN DELGADOS) -->
+<section class="max-w-[1400px] mx-auto px-6 py-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <!-- Proyecto 1 -->
+        <a href="https://www.behance.net/gallery/239976613/PORTAFOLIO" target="_blank"
+           class="group relative block aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl
+                  hover:shadow-glow hover:-translate-y-2 transition">
+
+            <img src="1.jpg" loading="lazy"
+                 class="absolute inset-0 w-full h-full object-cover
+                        transition group-hover:scale-105
+                        brightness-100 contrast-110 saturate-110">
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+            <div class="absolute bottom-0 left-0 p-8 w-full">
+                <span class="bg-brand-blue text-white px-3 py-1 text-xs font-bold rounded mb-3 inline-block">
+                    NUEVO
+                </span>
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-display text-white mb-2">
+                    PORTAFOLIO 2025
+                </h3>
+                <p class="text-gray-300 text-sm font-bold">
+                    Ver Proyecto <i class="fas fa-external-link-alt text-brand-blue"></i>
+                </p>
+            </div>
+        </a>
+
+        <!-- Proyecto 2 -->
+        <a href="https://www.behance.net/gallery/237861413/BRANDING-E-IDENTIDAD-VISUAL-CREATIGUATE" target="_blank"
+           class="group relative block aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl
+                  hover:shadow-glow hover:-translate-y-2 transition">
+
+            <img src="22.jpg" loading="lazy"
+                 class="absolute inset-0 w-full h-full object-cover
+                        transition group-hover:scale-105
+                        brightness-100 contrast-110 saturate-110">
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+            <div class="absolute bottom-0 left-0 p-8 w-full">
+                <span class="bg-white text-black px-3 py-1 text-xs font-bold rounded mb-3 inline-block">
+                    BRANDING
+                </span>
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-display text-white mb-2">
+                    CREATIGUATE
+                </h3>
+                <p class="text-gray-300 text-sm font-bold">
+                    Identidad Visual <i class="fas fa-external-link-alt text-brand-blue"></i>
+                </p>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="text-center mt-24">
+        <a href="https://www.behance.net/RicardoCristobal" target="_blank"
+           class="inline-flex items-center gap-2 border-2 border-brand-black px-10 py-4 rounded-full
+                  font-bold hover:bg-brand-black hover:text-white transition">
+            EXPLORAR TODO MI BEHANCE <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-brand-black text-white py-12 border-t border-gray-900 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+            <h3 class="font-display text-2xl">JIN SEOK</h3>
+            <p class="text-gray-500 text-xs font-bold tracking-widest mt-1">
+                CEO CREATIGUATE | GUATEMALA © 2024
+            </p>
+        </div>
+        <div class="flex gap-6 text-2xl text-gray-400">
+            <a href="https://www.behance.net/RicardoCristobal" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://instagram.com/joon_yong19" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/50252157800" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

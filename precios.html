@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin Seok | Precios Agencia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Montserrat', 'sans-serif'], display: ['Bebas Neue', 'cursive'] },
+                    colors: { brand: { black: '#0a0a0a', blue: '#2952E3', white: '#ffffff' } },
+                    boxShadow: { 'glow': '0 0 40px rgba(41, 82, 227, 0.5)' }
+                }
+            }
+        }
+    </script>
+    <style> .btn-pill { border-radius: 999px; padding: 12px 30px; font-weight: 700; text-transform: uppercase; } .btn-primary { background: #2952E3; color: white; } </style>
+</head>
+<body class="antialiased font-sans flex flex-col min-h-screen bg-gray-50">
+
+     <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="JIN.jpg" class="h-12 w-12 rounded-full object-cover border-2 border-transparent group-hover:border-brand-blue transition">
+                    <span class="font-display text-3xl mt-1 text-brand-black group-hover:text-brand-blue transition">JIN SEOK</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-brand-blue transition">Inicio</a>
+                    <a href="perfil.html" class="hover:text-brand-blue transition">Sobre Mí</a>
+                    <a href="servicios.html" class="hover:text-brand-blue transition">Servicios</a>
+                    <a href="precios.html" class="text-brand-blue">Precios</a>
+                    <a href="portafolio.html" class="hover:text-brand-blue transition">Portafolio</a>
+                    <a href="contacto.html" class="btn-pill btn-primary text-white text-[10px]">Contacto</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-xl p-4 text-center space-y-4">
+            <a href="index.html" class="block font-bold">INICIO</a>
+            <a href="perfil.html" class="block font-bold">SOBRE MÍ</a>
+            <a href="servicios.html" class="block font-bold">SERVICIOS</a>
+            <a href="precios.html" class="block font-bold text-brand-blue">PRECIOS</a>
+            <a href="portafolio.html" class="block font-bold">PORTAFOLIO</a>
+            <a href="contacto.html" class="block btn-pill btn-primary w-full text-white">CONTACTO</a>
+        </div>
+    </nav>
+
+    <header class="bg-brand-black text-white pt-40 pb-20 text-center">
+        <h1 class="text-6xl font-display" data-aos="fade-up">INVIERTE EN CALIDAD</h1>
+        <p class="text-gray-400 mt-4" data-aos="fade-up" data-aos-delay="100">Soluciones profesionales respaldadas por Creatiguate Agency.</p>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-4 py-20 -mt-20">
+        <div class="grid md:grid-cols-3 gap-8 mb-20">
+            
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 relative z-10" data-aos="fade-up">
+                <h3 class="text-2xl font-display text-brand-black mb-2">PRO STREAMER</h3>
+                <p class="text-gray-500 text-sm mb-6">Identidad visual para Twitch/YouTube.</p>
+                <div class="mb-6">
+                    <div class="text-4xl font-bold text-brand-black">Q1,150<span class="text-sm font-normal text-gray-400 align-top">*</span></div>
+                    <div class="text-sm font-semibold text-gray-400 mt-1">~ $150 USD</div>
+                </div>
+                <ul class="space-y-4 mb-8 text-sm text-gray-600">
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Overlay Animado (Inicio, BRB, Fin)</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> 5 Alertas Personalizadas</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Diseño de Avatar/Mascota 2D</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Configuración en OBS (Asesoría)</li>
+                </ul>
+                <a href="https://wa.me/50252157800?text=Hola,%20me%20interesa%20el%20Pro%20Streamer%20Kit" class="block w-full py-4 rounded-xl border-2 border-brand-black text-center font-bold hover:bg-brand-black hover:text-white transition">COTIZAR</a>
+            </div>
+
+            <div class="bg-brand-black text-white p-8 rounded-3xl shadow-2xl border-2 border-brand-blue relative transform md:-translate-y-6 z-20" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute top-0 right-0 bg-brand-blue text-white text-xs font-bold px-3 py-1 rounded-bl-xl uppercase">Best Seller</div>
+                <h3 class="text-3xl font-display text-white mb-2">AGENCIA PACK</h3>
+                <p class="text-gray-400 text-sm mb-6">Branding + Presencia Web Digital.</p>
+                <div class="mb-6">
+                    <div class="text-5xl font-bold text-white">Q2,850<span class="text-sm font-normal text-gray-500 align-top">*</span></div>
+                    <div class="text-lg font-semibold text-brand-blue/80 mt-1">~ $365 USD</div>
+                </div>
+                <p class="text-xs text-gray-500 mb-6">*Pago fraccionado disponible.</p>
+                <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Logo Profesional + Variaciones</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Manual de Identidad & Tipografía</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Landing Page (One Page) Moderna</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Configuración de Hosting/Dominio</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Kit Redes Sociales (3 Plantillas)</li>
+                </ul>
+                <a href="https://wa.me/50252157800?text=Hola,%20me%20interesa%20el%20Pack%20Agencia%20(Branding+Web)" class="block w-full py-4 rounded-xl bg-brand-blue text-center font-bold hover:bg-white hover:text-brand-blue transition shadow-glow">INICIAR PROYECTO</a>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 relative z-10" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-2xl font-display text-brand-black mb-2">ARTE & MERCH</h3>
+                <p class="text-gray-500 text-sm mb-6">Ilustración High-End para productos.</p>
+                <div class="mb-6">
+                    <div class="text-4xl font-bold text-brand-black">Q550<span class="text-sm font-normal text-gray-400 align-top">*</span></div>
+                    <div class="text-sm font-semibold text-gray-400 mt-1">~ $70 USD</div>
+                </div>
+                <ul class="space-y-4 mb-8 text-sm text-gray-600">
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Ilustración Digital Full Color</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Archivos Editables (AI/PSD)</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Licencia de Uso Comercial</li>
+                    <li class="flex items-center"><i class="fas fa-check text-brand-blue mr-3"></i> Mockups para Previsualización</li>
+                </ul>
+                <a href="https://wa.me/50252157800?text=Hola,%20me%20interesa%20Arte%20y%20Merch" class="block w-full py-4 rounded-xl border-2 border-brand-black text-center font-bold hover:bg-brand-black hover:text-white transition">COTIZAR</a>
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto" data-aos="fade-up">
+            <h2 class="text-4xl font-display text-center mb-10 text-brand-black">SERVICIOS A LA CARTA</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <h4 class="font-display text-2xl mb-6 text-brand-blue flex items-center gap-2"><i class="fas fa-gamepad"></i> EXTRAS STREAMING</h4>
+                    <div class="space-y-4">
+                        
+                        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-xs"><i class="fas fa-smile"></i></span>
+                                <span class="text-sm font-bold text-gray-700">Emote Individual</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="block font-bold text-brand-black">Q100</span>
+                                <span class="text-xs text-gray-400">~ $13</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-xs"><i class="fas fa-certificate"></i></span>
+                                <span class="text-sm font-bold text-gray-700">Insignias (Sub Badges) x3</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="block font-bold text-brand-black">Q150</span>
+                                <span class="text-xs text-gray-400">~ $20</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-xs"><i class="fas fa-image"></i></span>
+                                <span class="text-sm font-bold text-gray-700">Banner para Twitch/Youtube</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="block font-bold text-brand-black">Q200</span>
+                                <span class="text-xs text-gray-400">~ $25</span>
+                            </div>
+                        </div>
+
+                         <div class="flex justify-between items-center pt-1">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-xs"><i class="fas fa-bolt"></i></span>
+                                <span class="text-sm font-bold text-gray-700">Transición (Stinger)</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="block font-bold text-brand-black">Q250</span>
+                                <span class="text-xs text-gray-400">~ $32</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <h4 class="font-display text-2xl mb-6 text-brand-black flex items-center gap-2"><i class="fas fa-pen-nib"></i> DISEÑO & REDES</h4>
+                    <div class="space-y-4">
+                        
+                        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-xs"><i class="fas fa-hashtag"></i></span>
+                                <span class="text-sm font-bold text-gray-700">Post Redes Sociales (1 Arte)</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="block font-bold text-brand-black">Q150</span>
+                                <span class="text-xs text-gray-400">~ $20</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-xs"><i class="fas fa-id-card"></i></span>
+                                <span class="text-sm font-bold text-gray-700">Tarjeta de Presentación</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="block font-bold text-brand-black">Q200</span>
+                                <span class="text-xs text-gray-400">~ $25</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-xs"><i class="fas fa-vector-square"></i></span>
+                                <span class="text-sm font-bold text-gray-700">Logo Básico (Solo vector)</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="block font-bold text-brand-black">Q650</span>
+                                <span class="text-xs text-gray-400">~ $85</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center pt-1">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-xs"><i class="fas fa-file-pdf"></i></span>
+                                <span class="text-sm font-bold text-gray-700">Flyer / Afiche Digital</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="block font-bold text-brand-black">Q250</span>
+                                <span class="text-xs text-gray-400">~ $32</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-16 text-center text-gray-500 text-sm max-w-2xl mx-auto">
+            <p>Los precios en dólares son aproximados y pueden variar según el tipo de cambio del día. Se requiere un 50% de anticipo para iniciar cualquier proyecto.</p>
+        </div>
+    </section>
+
+    <footer class="bg-brand-black text-white py-12 border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h3 class="font-display text-2xl">JIN SEOK</h3>
+                <p class="text-gray-500 text-xs font-bold tracking-widest mt-1">CEO CREATIGUATE | GUATEMALA &copy; 2024</p>
+            </div>
+            <div class="flex gap-6 text-2xl text-gray-400">
+                <a href="https://www.behance.net/RicardoCristobal" target="_blank" class="hover:text-brand-blue transition"><i class="fab fa-behance"></i></a>
+                <a href="https://instagram.com/joon_yong19" target="_blank" class="hover:text-[#E1306C] transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/50252157800" target="_blank" class="hover:text-[#25D366] transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin Seok | Sobre Mí</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Montserrat', 'sans-serif'], display: ['Bebas Neue', 'cursive'] },
+                    colors: { brand: { black: '#0a0a0a', blue: '#2952E3', purple: '#9146FF' } }
+                }
+            }
+        }
+    </script>
+    <style> 
+        body { background-color: #0a0a0a; color: white; } 
+        /* Animación suave para el fondo */
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob { animation: blob 7s infinite; }
+    </style>
+</head>
+<body class="antialiased font-sans min-h-screen flex flex-col">
+
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="JIN.jpg" class="h-12 w-12 rounded-full object-cover border-2 border-transparent group-hover:border-brand-blue transition">
+                    <span class="font-display text-3xl mt-1 text-white group-hover:text-brand-blue transition">JIN SEOK</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider text-gray-300">
+                    <a href="index.html" class="hover:text-brand-blue transition">Inicio</a>
+                    <a href="perfil.html" class="text-brand-blue">Sobre Mí</a>
+                    <a href="servicios.html" class="hover:text-brand-blue transition">Servicios</a>
+                    <a href="precios.html" class="hover:text-brand-blue transition">Precios</a>
+                    <a href="portafolio.html" class="hover:text-brand-blue transition">Portafolio</a>
+                    <a href="contacto.html" class="px-5 py-2 rounded-full bg-brand-blue text-white hover:bg-white hover:text-black transition">Contacto</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-2xl text-white"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-800 absolute w-full left-0 shadow-xl p-4 text-center space-y-4">
+            <a href="index.html" class="block font-bold text-gray-300 hover:text-white">INICIO</a>
+            <a href="perfil.html" class="block font-bold text-brand-blue">SOBRE MÍ</a>
+            <a href="servicios.html" class="block font-bold text-gray-300 hover:text-white">SERVICIOS</a>
+            <a href="precios.html" class="block font-bold text-gray-300 hover:text-white">PRECIOS</a>
+            <a href="portafolio.html" class="block font-bold text-gray-300 hover:text-white">PORTAFOLIO</a>
+            <a href="contacto.html" class="block px-5 py-3 rounded-full bg-brand-blue text-white font-bold">CONTACTO</a>
+        </div>
+    </nav>
+
+    <div class="flex-grow flex items-center justify-center p-4 pt-32 pb-12 relative overflow-hidden">
+        
+        <div class="absolute top-0 left-1/4 w-72 h-72 bg-brand-blue/20 rounded-full blur-[100px] animate-blob mix-blend-multiply filter pointer-events-none"></div>
+        <div class="absolute top-0 right-1/4 w-72 h-72 bg-purple-600/20 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-multiply filter pointer-events-none"></div>
+
+        <div class="max-w-md w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center relative z-10 shadow-2xl hover:border-brand-blue/30 transition duration-500">
+            
+            <div class="relative w-32 h-32 mx-auto mb-6">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-blue to-brand-purple rounded-full animate-spin-slow blur-sm opacity-70"></div>
+                <img src="JIN.jpg" class="relative w-full h-full object-cover rounded-full border-4 border-[#1a1a1a]">
+                <div class="absolute bottom-1 right-1 bg-green-500 w-5 h-5 rounded-full border-2 border-[#1a1a1a] shadow-[0_0_10px_#22c55e]" title="Online"></div>
+            </div>
+
+            <h1 class="text-5xl font-display mb-1 tracking-wide">JIN SEOK</h1>
+            <p class="text-brand-blue font-bold text-[10px] tracking-[0.2em] uppercase mb-6 bg-brand-blue/10 inline-block px-3 py-1 rounded">Ingeniero • Streamer • Designer</p>
+
+            <p class="text-gray-300 text-sm mb-8 leading-relaxed font-light">
+                Combinando la lógica de la <b class="text-white">Ingeniería en Sistemas</b> con la creatividad del <b class="text-white">Diseño Gráfico</b>. Creo marcas y contenido visual mientras conquisto mundos en Twitch.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-brand-blue/50 transition cursor-default">
+                    <i class="fas fa-code text-brand-blue mb-2 text-xl"></i>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Estudiante</p>
+                    <p class="font-bold text-sm text-white">Sistemas</p>
+                </div>
+                <div class="bg-black/30 p-4 rounded-xl border border-white/5 hover:border-brand-purple/50 transition cursor-default">
+                    <i class="fas fa-headset text-brand-purple mb-2 text-xl"></i>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Streamer</p>
+                    <p class="font-bold text-sm text-white">Gamer</p>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <a href="https://instagram.com/joon_yong19" target="_blank" class="flex items-center justify-center w-full py-3.5 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 font-bold text-sm hover:scale-[1.02] transition shadow-lg gap-3">
+                    <i class="fab fa-instagram text-lg"></i> Seguir en Instagram
+                </a>
+                
+                <a href="https://www.twitch.tv/j19seok" target="_blank" class="flex items-center justify-center w-full py-3.5 rounded-xl bg-[#9146FF] font-bold text-sm hover:scale-[1.02] transition shadow-lg gap-3">
+                    <i class="fab fa-twitch text-lg"></i> Twitch
+                </a>
+
+                <a href="https://www.behance.net/RicardoCristobal" target="_blank" class="flex items-center justify-center w-full py-3.5 rounded-xl bg-[#0057ff] font-bold text-sm hover:scale-[1.02] transition shadow-lg gap-3">
+                    <i class="fab fa-behance text-lg"></i> Ver Portafolio
+                </a>
+                
+                <a href="mailto:j19seok@gmail.com" class="flex items-center justify-center w-full py-3.5 rounded-xl bg-gray-800 border border-gray-700 hover:bg-gray-700 font-bold text-sm transition gap-3">
+                    <i class="fas fa-envelope text-lg"></i> Contacto Email
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center py-8 text-gray-600 text-xs font-bold tracking-widest border-t border-white/10 bg-black">
+        &copy; 2024 JIN SEOK. HECHO EN GUATEMALA.
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin Seok | CEO Creatiguate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Montserrat', 'sans-serif'], display: ['Bebas Neue', 'cursive'] },
+                    colors: { brand: { black: '#0a0a0a', blue: '#2952E3', white: '#ffffff', gray: '#F3F4F6', darkgray: '#111111' } },
+                    boxShadow: { 'glow': '0 0 50px rgba(41, 82, 227, 0.4)' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #ffffff; color: #0a0a0a; overflow-x: hidden; }
+        .btn-pill { display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px; padding: 12px 30px; font-weight: 700; text-transform: uppercase; transition: 0.3s; }
+        .btn-primary { background-color: #2952E3; color: white; box-shadow: 0 4px 15px rgba(41, 82, 227, 0.3); }
+        .btn-primary:hover { background-color: #0a0a0a; transform: translateY(-3px); }
+        .btn-outline { border: 2px solid #0a0a0a; }
+        .btn-outline:hover { background-color: #0a0a0a; color: white; }
+        .animate-float { animation: float 4s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+    </style>
+</head>
+<body class="antialiased font-sans flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="JIN.jpg" class="h-12 w-12 rounded-full object-cover border-2 border-transparent group-hover:border-brand-blue transition">
+                    <span class="font-display text-3xl mt-1 text-brand-black group-hover:text-brand-blue transition">JIN SEOK</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider">
+                    <a href="index.html" class="text-brand-blue">Inicio</a>
+                    <a href="perfil.html" class="hover:text-brand-blue transition">Sobre Mí</a>
+                    <a href="servicios.html" class="hover:text-brand-blue transition">Servicios</a>
+                    <a href="precios.html" class="hover:text-brand-blue transition">Precios</a>
+                    <a href="portafolio.html" class="hover:text-brand-blue transition">Portafolio</a>
+                    <a href="contacto.html" class="btn-pill btn-primary text-white text-[10px]">Contacto</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-xl p-4 text-center space-y-4">
+            <a href="index.html" class="block font-bold text-brand-blue">INICIO</a>
+            <a href="perfil.html" class="block font-bold">SOBRE MÍ</a>
+            <a href="servicios.html" class="block font-bold">SERVICIOS</a>
+            <a href="precios.html" class="block font-bold">PRECIOS</a>
+            <a href="portafolio.html" class="block font-bold">PORTAFOLIO</a>
+            <a href="contacto.html" class="block btn-pill btn-primary w-full text-white">CONTACTO</a>
+        </div>
+    </nav>
+
+    <section class="pt-48 pb-32 overflow-hidden relative">
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-brand-blue/5 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <div class="flex flex-wrap items-center gap-2 mb-6">
+                    <span class="bg-brand-black text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-glow">CEO Creatiguate</span>
+                    <span class="bg-white border border-brand-black text-brand-black px-3 py-1 rounded text-xs font-bold uppercase tracking-widest">Freelancer</span>
+                    <span class="bg-brand-blue text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-glow">Estudiante de Ing. en Sistemas</span>
+                </div>
+                <h1 class="text-7xl lg:text-8xl leading-none text-brand-black mb-6 font-display">
+                    TU VISIÓN <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-blue-400">HECHA REALIDAD.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 font-medium max-w-lg">Como líder de <strong>Creatiguate</strong>, combino la lógica de la ingeniería con estrategias de branding para crear marcas, webs y streams que funcionan.</p>
+                <div class="flex gap-4">
+                    <a href="portafolio.html" class="btn-pill btn-primary">Ver Portafolio</a>
+                    <a href="perfil.html" class="btn-pill btn-outline">Conóceme</a>
+                </div>
+            </div>
+            <div class="relative animate-float" data-aos="fade-left">
+                <div class="absolute inset-0 border-2 border-brand-blue rounded-[3rem] transform translate-x-4 translate-y-4 -z-10"></div>
+                <img src="JIN.jpg" class="rounded-[3rem] shadow-2xl w-full max-w-md mx-auto grayscale hover:grayscale-0 transition duration-700 object-cover aspect-[4/5]">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-black text-white relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-display mb-4">MÁS QUE SOLO PIXELES</h2>
+                <p class="text-gray-400">Mi background como Ingeniero y CEO me da una ventaja única.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-brand-darkgray p-8 rounded-2xl border border-gray-800 hover:border-brand-blue transition group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue transition"><i class="fas fa-code"></i></div>
+                    <h3 class="text-2xl font-display mb-3">LÓGICA + SISTEMAS</h3>
+                    <p class="text-gray-400 text-sm">Entiendo cómo funciona la tecnología detrás del diseño web y los overlays. No solo se ve bien, funciona bien.</p>
+                </div>
+                
+                <div class="bg-brand-darkgray p-8 rounded-2xl border border-gray-800 hover:border-brand-blue transition group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue transition"><i class="fas fa-briefcase"></i></div>
+                    <h3 class="text-2xl font-display mb-3">BRANDING & MARKETING</h3>
+                    <p class="text-gray-400 text-sm">En <strong>Creatiguate</strong> desarrollamos identidades completas. Tengo el ojo entrenado para elevar tu marca al siguiente nivel.</p>
+                </div>
+
+                <div class="bg-brand-darkgray p-8 rounded-2xl border border-gray-800 hover:border-brand-blue transition group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue transition"><i class="fas fa-headset"></i></div>
+                    <h3 class="text-2xl font-display mb-3">GAMER MINDSET</h3>
+                    <p class="text-gray-400 text-sm">Soy streamer. Sé lo que necesitas para tu canal porque yo también lo necesito. Hablamos el mismo idioma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-blue text-white text-center">
+        <div class="max-w-4xl mx-auto px-4" data-aos="zoom-in">
+            <h2 class="text-5xl md:text-7xl font-display mb-8">¿TIENES UN PROYECTO?</h2>
+            <p class="text-xl mb-10 text-white/90">Ya sea para tu marca personal, tu empresa o tu canal de Twitch.</p>
+            <a href="contacto.html" class="inline-block bg-white text-brand-blue px-10 py-4 rounded-full font-bold hover:bg-black hover:text-white transition shadow-xl text-lg">
+                HABLEMOS AHORA
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-brand-black text-white py-12 border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h3 class="font-display text-2xl">JIN SEOK</h3>
+                <p class="text-gray-500 text-xs font-bold tracking-widest mt-1">CEO CREATIGUATE | HECHO EN GUATEMALA &copy; 2024</p>
+            </div>
+            <div class="flex gap-6 text-2xl text-gray-400">
+                <a href="https://www.behance.net/RicardoCristobal" target="_blank" class="hover:text-brand-blue transition"><i class="fab fa-behance"></i></a>
+                <a href="https://instagram.com/joon_yong19" target="_blank" class="hover:text-[#E1306C] transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/50252157800" target="_blank" class="hover:text-[#25D366] transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
